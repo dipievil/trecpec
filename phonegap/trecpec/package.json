@@ -1,0 +1,13 @@
+{
+    "name": "com.trecpec",
+    "version": "1.0.0",
+    "displayName": "trecpec",
+    "cordova": {
+        "platforms": [
+            "android"
+        ]
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3"
+    }
+}

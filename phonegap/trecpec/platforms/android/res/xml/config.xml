@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.trecpec" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>trecpec</name>
+    <description>
+        Rastreiador dos Correios
+    </description>
+    <author email="diego@sistemasd.com.br" href="http://www.sistemasd.com.br">
+        Diego Ritzel
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>
