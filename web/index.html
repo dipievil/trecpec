@@ -4,27 +4,28 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
     <title>Teste</title>
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-resource.min.js"></script>
+    <!--<script src="Scripts/angular.min.js"></script>
+    
 
-    <!-- jQuery library -->
     <script src="Scripts/jquery-1.9.1.min.js"></script>
 
     <link href="Content/ionic.min.css" rel="stylesheet">
 
-    <script src="Scripts/ionic.min.js"></script>
-    <script src="Scripts/ionic.bundle.min.js"></script>
-
+    <script src="Scripts/ionic.min.js"></script>-->
+    <link href="https://code.ionicframework.com/0.9.25/css/ionic.min.css" rel="stylesheet">
+    <script src="https://code.ionicframework.com/0.9.25/js/ionic.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-sanitize.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
     <script src="Scripts/controller.js"></script>
     <script src="Scripts/service.js"></script>
     <script src="Scripts/app.js"></script>
 </head>
 <body ng-controller="ApiController">
+    <ion-header-bar title="myTitle">Busca de CEP</ion-header-bar>
         <ion-header-bar class="bar-stable">
             <h1 class="title">Busca dados do cep</h1>
         </ion-header-bar>
-        <ion-content>
-           
+        <ion-content>           
             <ion-list>
                 <ion-item>
                     <ion-label fixed>CEP</ion-label>
