@@ -1,40 +1,55 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html ng-app="cepApp">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
     <title>Teste</title>
     <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
 
     <!-- jQuery library -->
     <script src="Scripts/jquery-1.9.1.min.js"></script>
 
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-
     <link href="Content/ionic.min.css" rel="stylesheet">
 
-    <script src="Scripts/ionic.js"></script>
+    <script src="Scripts/ionic.min.js"></script>
+    <script src="Scripts/ionic.bundle.min.js"></script>
+
+    <script src="Scripts/controller.js"></script>
+    <script src="Scripts/service.js"></script>
+    <script src="Scripts/app.js"></script>
 </head>
-<body>
-    <ion-pane>
-
-        <ion-header-bar class="bar-stable bar-dark">
-            <h2 class="title">Meu app novo!</h2>
+<body ng-controller="ApiController">
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Busca dados do cep</h1>
         </ion-header-bar>
-
-        <!--
-        <div class="bar bar-header bar-dark">
-            <h1 class="title">Barra preta</h1>
-        </div>
-            -->
-        <ion-content class="text-center">
-            <h3> Conteúdo do app</h3>
-            <div>
-                <p> valor 1</p>
-                <p>valor 2</p>
-            </div>
+        <ion-content>
+           
+            <ion-list>
+                <ion-item>
+                    <ion-label fixed>CEP</ion-label>
+                    <ion-input type="text" value="" ng-model="cep"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <button ion-button ng-click="findCep()">Buscar o CEP</button>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="home" item-start></ion-icon>
+                    Logradouro: {{logradouro}}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="pin" item-start></ion-icon>
+                    <ion-label fixed>Bairro: {{bairro}}  </ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="info" item-start></ion-icon>
+                    Complemento: {{complemento}}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="pin" item-start></ion-icon>
+                    Cidade: {{city}} / {{uf}}
+                </ion-item>
+            </ion-list>
         </ion-content>
-
-    </ion-pane>
-
 </body>
-</html>
+</htmlng-app="cepApp">
