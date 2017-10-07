@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.sistemasd.buscaCEP"
+    versionCode = "1"
+    version     = "0.0.1" >
+	
+	 <name>Busca de CEP</name>
+
+  <description>
+      Sistema de busca de ceps.
+  </description>
+  
+    <author href="https://www.sistemasd.com.br" email="diego@sistemasd.com.br">
+      Diego Ritzel
+  </author>
+
+</widget>
